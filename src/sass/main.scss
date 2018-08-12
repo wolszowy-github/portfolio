@@ -1,0 +1,11 @@
+@import "project-styles/fonts";
+
+$font-family-base: 'rubik-light';
+$container-max-widths: ( sm: 540px, md: 720px, lg: 940px, xl: 941px);
+
+@import "bootstrap/bootstrap";
+@import "project-styles/general";
+@import "project-styles/svg-texts";
+
+
+

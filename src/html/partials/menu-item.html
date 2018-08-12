@@ -1,0 +1,18 @@
+
+<div class="hover-wrapper">
+  <figure class="theimage my-0">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="@@viewbox">
+      <a href="#" target="@@target_modal">
+        <text class="svg-txt @@svg_text_class" x="@@x_dimension" y="@@y_dimension">
+          @@svg_text
+          @@if(context.tspan_text){<tspan class="@@tspan_classes" x="@@tspan_x_dimension" y="@@tspan_y_dimension">@@tspan_text</tspan>}
+        </text>
+      </a>
+    </svg>
+  </figure>
+  <div class="hover-container @@hover_container_classes">
+    @@if(context.link_element){
+      <img class="@@if(context.img_classes){@@img_classes}" src="img/@@link_element_hover.jpg" alt="@@alt">
+    }
+  </div>
+</div>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <main class="container">
+
+
+    <div id="main-bg-container" class="main-background-container">
+
+
+      <div class="row">
+        <div class="col-12">
+          <h1 class="animated-container">
+            <figure id="top-animated" class="theimage my-0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20">
+                <text class="svg-txt" x="1" y="19">
+                  ABOUT
+                </text>
+              </svg>
+            </figure>
+            <figure id="bottom-animated" class="my-0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20">
+                <text class="svg-txt" x="7" y="19">
+                  WORKS
+                </text>
+              </svg>
+            </figure>
+            <figure id="content-animated" class="my-0 intro-text">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 40">
+                <text class="svg-txt" x="8" y="8">
+                  MIŁO MI, JESTEM EWELINA.
+                  <tspan x="46" y="38">NAPISZ, &#347;MIAŁO!</tspan>
+                  <tspan x="8" y="14">W ŻYCIU, I W PROJEKTOWANIU</tspan>
+                  <tspan x="8" y="20">STARAM SIĘ ZACHOWAĆ</tspan>
+                  <tspan x="8" y="26">POCZUCIE HUMORU</tspan>
+                </text>
+              </svg>
+            </figure>
+          </h1>
+        </div>
+      </div>
+
+      <div id="menu-animated" class="main-background-container">
+
+        @@loop('./src/html/partials/menu-item.html', [
+          { 
+            "target_modal" : "covers",
+            "svg_text"     : "covers",
+            "link_element" : "covers",
+            "viewbox"      : "0 0 100 11",
+            "x_dimension"  : "6",
+            "y_dimension"  : "10",
+            "alt"          : "projekt okładki",
+            "svg_text_class": "covers",
+            "hover_container_classes": "covers",
+            "img_classes":"img-fluid"
+          },
+
+          { 
+            "target_modal" : "zz-award",
+            "svg_text" : "zz award",
+            "link_element" : "zz_award",
+            "viewbox" : "0 0 100 13",
+            "x_dimension": "8",
+            "y_dimension": "13",
+            "alt" : "zz award",
+            "svg_text_class": "zz-award",
+            "hover_container_classes": "zz-award",
+            "img_classes":"zz-award-img"
+          },
+
+          { 
+            "svg_text" : "patrimonium",
+            "link_element" : "patrimonium",
+            "viewbox" : "0 0 100 10",
+            "x_dimension": "6",
+            "y_dimension": "9",
+            "alt" : "patrimonium",
+            "svg_text_class": "patrimonium",
+            "hover_container_classes": "patrimonium",
+            "img_classes":"patrimonium-img"
+          },
+          { 
+            "svg_text" : "coming out",
+            "link_element" : "coming_out",
+            "viewbox" : "0 0 100 14",
+            "x_dimension": "1",
+            "y_dimension": "12",
+            "alt" : "coming out",
+            "svg_text_class": "coming-out",
+            "hover_container_classes": "coming-out",
+            "img_classes":"img-fluid"
+          },
+          { 
+            "svg_text" : "chopin",
+            "viewbox" : "0 0 100 22",
+            "x_dimension": "11",
+            "y_dimension": "13",
+            "tspan_text": "institute",
+            "tspan_x_dimension": "37",
+            "tspan_y_dimension": "21",
+            "tspan_classes": "institute",
+            "link_element" : "chopin",
+            "alt" : "chopin institute",
+            "svg_text_class": "chopin",
+            "hover_container_classes": "chopin",
+            "img_classes":"chopin-img"
+          },
+
+          { 
+            "svg_text" : "music school",
+            "link_element" : "music_school",
+            "viewbox" : "00 0 100 10",
+            "x_dimension": "4",
+            "y_dimension": "9",
+            "alt" : "music school",
+            "svg_text_class": "music-school",
+            "hover_container_classes": "music-school",
+            "img_classes":"music-school-img"
+          },
+
+          { 
+            "svg_text" : "nimit",
+            "link_element" : "",
+            "viewbox" : "0 0 100 21",
+            "x_dimension": "12",
+            "y_dimension": "20",
+            "alt" : "nimit",
+            "svg_text_class": "nimit",
+            "hover_container_classes": "",
+            "img_classes":"d-none"
+          },
+          { 
+            "svg_text" : "selfbrand",
+            "link_element" : "selfbrand",
+            "viewbox" : "0 0 100 12",
+            "x_dimension": "10",
+            "y_dimension": "10",
+            "alt" : "selfbrand",
+            "svg_text_class": "selfbrand",
+            "hover_container_classes": "selfbrand",
+            "img_classes":"selfbrand-img"
+          }
+        ])
+        
+      </div>  
+      
+    </div>
+           
+  </main>
+
+  @@include('./src/html/partials/covers.html')
+  @@include('./src/html/partials/zz-award.html')
+
+
+  <script src="./js/app.js"></script>
+</body>
+
+</html>

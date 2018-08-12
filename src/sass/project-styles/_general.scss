@@ -1,0 +1,234 @@
+.main-background-container {
+  background-color: #f8f8f8;
+}
+
+
+.animated-container {
+  margin: 0;
+  font-size: 25px;
+  position: relative;
+
+  .intro-text {
+    font-family: 'rubik-black', sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+
+    text {
+      fill: #000;
+      font-size: 5px;
+    }
+  }
+
+  
+}
+
+.hover-wrapper {
+  position: relative;
+
+  figure {
+    position: relative;
+    z-index: 5;
+  }
+
+    
+  .hover-container {
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity .2s;
+    
+    &.covers {
+      transform: translateY(6%);
+    }
+
+    &.zz-award {
+
+      transform: translateY(-23%);
+
+      .zz-award-img {
+        width: 83.3%;
+      }
+    }
+
+    &.patrimonium {
+      transform: translateY(-2%);
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      .patrimonium-img {
+        width: 83.3%;
+      }
+    }
+
+    &.coming-out {
+      transform: translateY(4%);
+    }
+
+    &.chopin {
+      transform: translateY(-77%);
+
+      .chopin-img {
+        width: 50%;
+        transform: translateX(90%);
+      } 
+    }
+
+    &.music-school {
+      transform: translateY(-70%);
+
+      .music-school-img {
+        width: 90%;
+      }
+    }
+
+    &.selfbrand {
+      transform: translateY(-91%);
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      .selfbrand-img {
+        width: 50%;
+      }
+    }
+
+  }
+  
+  &:hover {
+
+    & svg {
+      a {
+        text-decoration: none;
+        cursor: pointer;
+      }
+      text {
+        fill: #333;
+      }
+    }
+
+    & .hover-container {
+      opacity: 1;
+    }
+  }
+}
+
+
+body {
+  position: relative;
+  display: flex;
+
+  p {
+    font-size: 12px;
+    color: #333;
+    line-height: 2;
+  }
+}
+
+[modal] {
+  position: fixed;
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  transform: scale(0);
+  transition: transform .2s;
+
+  &.open {
+      transform: scale(1);
+  }
+}
+
+[fixed-container] {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 70px;
+    width: 100%;
+    top: 80px;
+
+    .section-head {
+      position: relative;
+
+      [close-modal] {
+      
+        text-decoration: none;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 15px;
+      
+      
+        img {
+          width: 42px;
+        }
+      }
+    }
+    
+  }
+
+
+  //modal sections styles
+
+  .covers-modal {
+
+    .top-covers-margin {
+      margin-top: 156px;
+    }
+
+    .bottom-covers-margin {
+      margin-bottom: 156px;
+    }
+
+    .img-pink {
+      transform: translateY(-13%);
+    }
+
+    .img-blue {
+      transform: translateY(-9%);
+    }
+
+  }
+
+ .zz-award-modal {
+
+    .top-zz-award-margin {
+      margin-top: 156px;
+    }
+
+    .bottom-zz-award-margin {
+      margin-bottom: 156px;
+    }
+
+    .zz-img-last {
+      transform: translateY(13%);
+    }
+ } 
+  
+  
+  .final-container {
+    position: relative;
+
+    img {
+      position: relative;
+    }
+
+    &:before {
+      content: '';
+      height: 50%;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      background-color: #fff;
+    }
+  }

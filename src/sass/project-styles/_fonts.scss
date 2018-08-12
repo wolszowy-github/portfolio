@@ -1,0 +1,12 @@
+@mixin font-face($name, $weight) {
+  @font-face {
+    font-family: '#{$name}-#{$weight}';
+    src: url('../fonts/#{$name}-#{$weight}-webfont.woff2') format('woff2'),
+    url('../fonts/#{$name}-#{$weight}-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@include font-face('rubik','light');
+@include font-face('rubik','black');

@@ -1,0 +1,48 @@
+.svg-txt {
+  font-family: 'rubik-black';
+  fill: transparent;
+  stroke-width: 0.1px;
+  stroke: #000;
+  transition: fill .2s;
+  text-transform: uppercase;
+
+  &.covers {
+    font-size: 13px;
+    letter-spacing: 0.2px;
+  }
+
+  &.zz-award {
+    font-size: 16px;
+  }
+
+  &.patrimonium {
+    font-size: 10px;
+  }
+
+  &.coming-out {
+    font-size: 15px;
+  }
+
+  &.chopin {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+     .institute {
+       font-size: 10px;
+       letter-spacing: 0px;
+     } 
+  }
+
+  &.music-school {
+    font-size: 12px;
+  }
+
+  &.nimit {
+    font-size: 27px;
+    letter-spacing: -0.5px;
+  }
+
+  &.selfbrand {
+    letter-spacing: 0.2px;
+    font-size: 14px;
+  }
+}
