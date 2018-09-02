@@ -3,9 +3,40 @@
 }
 
 
+video {
+  width: 100%;
+  height: auto;
+}
+
+a.mailto-svg  {
+    text-decoration: none;
+    & tspan {
+      fill: #fff;
+      transition: fill .2s;
+    }
+
+   &:hover {
+      & tspan {
+        fill: #000;
+      }
+   } 
+}
+
+.behance-container{
+  display: flex;
+  justify-content: flex-end;
+
+  .behance-logo{
+    width: 70px;
+    height: 48px;
+  }
+}
+
+
 .animated-container {
   margin: 0;
   font-size: 25px;
+  z-index: 1;
   position: relative;
 
   .intro-text {
@@ -69,7 +100,8 @@
     }
 
     &.coming-out {
-      transform: translateY(4%);
+      transform: translateY(-60%);
+      text-align: right;
     }
 
     &.chopin {
@@ -89,14 +121,22 @@
       }
     }
 
+    &.nimit {
+      transform: translateY(-60%);
+      .nimit-img {
+        width: 100%;
+      }
+    }
+
+
     &.selfbrand {
-      transform: translateY(-91%);
+      transform: translateY(-86%);
       display: flex;
       justify-content: flex-end;
       align-items: center;
 
       .selfbrand-img {
-        width: 50%;
+        width: 68%;
       }
     }
 
@@ -111,6 +151,10 @@
       }
       text {
         fill: #333;
+
+        &.nimit {
+          fill: #fff;
+        }
       }
     }
 
@@ -134,6 +178,7 @@ body {
 
 [modal] {
   position: fixed;
+  z-index: 100;
   overflow-y: scroll;
   width: 100%;
   height: 100%;
@@ -149,8 +194,8 @@ body {
 }
 
 [fixed-container] {
-    position: absolute;
-    z-index: 1;
+    position: sticky;
+    z-index: 4;
     left: 0;
     right: 70px;
     width: 100%;
@@ -176,45 +221,33 @@ body {
     
   }
 
+  [toggle-img] {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+
+.toggle-img {
+  z-index: 2;
+  animation: toggler .7s ease-out forwards;
+}
+
+  @keyframes toggler {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
 
   //modal sections styles
 
-  .covers-modal {
 
-    .top-covers-margin {
-      margin-top: 156px;
-    }
 
-    .bottom-covers-margin {
-      margin-bottom: 156px;
-    }
-
-    .img-pink {
-      transform: translateY(-13%);
-    }
-
-    .img-blue {
-      transform: translateY(-9%);
-    }
-
-  }
-
- .zz-award-modal {
-
-    .top-zz-award-margin {
-      margin-top: 156px;
-    }
-
-    .bottom-zz-award-margin {
-      margin-bottom: 156px;
-    }
-
-    .zz-img-last {
-      transform: translateY(13%);
-    }
- } 
-  
-  
   .final-container {
     position: relative;
 

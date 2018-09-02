@@ -1,0 +1,23 @@
+ .selfbrand-modal {
+
+    [fixed-container] .section-head [close-modal] {
+      top: -60px;
+    }
+
+    .top-selfbrand-margin {
+      margin-top: -75px;
+    }
+
+    .overlayed-group {
+      position: relative;
+      padding-top: 370px;
+
+      .floater {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+      }
+
+    }
+ }

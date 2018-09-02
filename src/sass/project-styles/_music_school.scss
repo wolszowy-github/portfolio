@@ -1,0 +1,23 @@
+ .music-school-modal {
+
+    [fixed-container] .section-head [close-modal] {
+      top: -60px;
+    }
+
+    .top-music-school-margin {
+      margin-top: -60px;
+    }
+
+    .overlayed-group {
+      padding-bottom: 33%;
+      position: relative;
+
+      .music-school-posters {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+      }
+    }
+
+ }

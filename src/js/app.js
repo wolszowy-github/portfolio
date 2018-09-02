@@ -14,7 +14,8 @@ class Portfolio  {
             bottomDistance:0,
             modals: document.querySelectorAll('[modal]'),
             modalTriggers: document.querySelectorAll('[target]'),
-            modalCloseTriggers: document.querySelectorAll('[close-modal]')
+            modalCloseTriggers: document.querySelectorAll('[close-modal]'),
+            toggleImg: document.querySelectorAll('[toggle-img]')
         }
     }
 
@@ -100,7 +101,6 @@ class Portfolio  {
       Array.from(this.el.modalTriggers).forEach(trigger => {
 
         trigger.addEventListener('click', (e) => {
-
           e.preventDefault();
           const target = trigger.getAttribute('target');
           const triggerTopDist = trigger.getBoundingClientRect().top;
@@ -166,22 +166,42 @@ class Portfolio  {
       this.modalStateOpen();
       this.modalStateClose();
 
-      Array.from(this.el.modals).forEach(modal => {
+      // Array.from(this.el.modals).forEach(modal => {
 
-        modal.addEventListener('scroll', function (e) {
+      //   modal.addEventListener('scroll', function (e) {
 
-          this.querySelector(`[fixed-container]`).style.top = this.scrollTop + 80 + 'px';
+      //     this.querySelector(`[fixed-container]`).style.top = this.scrollTop + 80 + 'px';
 
+      //   })
+
+      // })
+
+    }
+
+    toggleImg() {
+      let allImg = Array.from(this.el.toggleImg);
+
+      allImg.forEach(function(img, index) {
+
+
+        img.addEventListener('click', function() {
+          this.classList.add('toggle-img')
+          
+          allImg.forEach(function(item, i) {
+             if(i !== index) {
+               item.classList.remove('toggle-img')
+             } 
+
+          })
         })
-
       })
-
     }
 
     init() {
       this.setProperDistance();
       this.animation();
       this.modals();
+      this.toggleImg()
 
 
      }

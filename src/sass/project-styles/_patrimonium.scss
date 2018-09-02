@@ -1,0 +1,27 @@
+ .patrimonium-modal {
+
+
+    .behance-floater {
+      bottom: -15px;
+    }
+
+    .top-patrimonium-margin {
+       margin-top: 30px;
+    }
+
+    .bottom-patrimonium-margin {
+      margin-bottom: 30px;
+    }
+
+    .maps {
+      position: relative;
+      margin-bottom: 375px;
+
+       img:nth-child(2) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(0%, 70%);
+       }
+    }
+ }

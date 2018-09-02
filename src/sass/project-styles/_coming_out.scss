@@ -1,0 +1,21 @@
+ .coming-out-modal {
+
+   [fixed-container] .section-head [close-modal] {
+     top: -64px;
+   }
+
+   .top-coming-out-margin {
+     margin-top: -90px;
+   }
+
+   .overlayed-group {
+     position: relative;
+     .shirt {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        transform: translateY(60%)
+     }
+   }
+ }

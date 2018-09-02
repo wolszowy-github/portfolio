@@ -12,9 +12,8 @@
 <body>
   <main class="container">
 
-
+  
     <div id="main-bg-container" class="main-background-container">
-
 
       <div class="row">
         <div class="col-12">
@@ -37,7 +36,9 @@
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 40">
                 <text class="svg-txt" x="8" y="8">
                   MIŁO MI, JESTEM EWELINA.
-                  <tspan x="46" y="38">NAPISZ, &#347;MIAŁO!</tspan>
+                  <a class="mailto-svg" href="mailto:ewelinaelzbieta.cis@gmail.com">
+                    <tspan x="46" y="38">NAPISZ, &#347;MIAŁO!</tspan>
+                  </a>
                   <tspan x="8" y="14">W ŻYCIU, I W PROJEKTOWANIU</tspan>
                   <tspan x="8" y="20">STARAM SIĘ ZACHOWAĆ</tspan>
                   <tspan x="8" y="26">POCZUCIE HUMORU</tspan>
@@ -68,7 +69,7 @@
             "target_modal" : "zz-award",
             "svg_text" : "zz award",
             "link_element" : "zz_award",
-            "viewbox" : "0 0 100 13",
+            "viewbox" : "0 0 100 14",
             "x_dimension": "8",
             "y_dimension": "13",
             "alt" : "zz award",
@@ -78,6 +79,7 @@
           },
 
           { 
+            "target_modal" : "patrimonium",
             "svg_text" : "patrimonium",
             "link_element" : "patrimonium",
             "viewbox" : "0 0 100 10",
@@ -89,6 +91,7 @@
             "img_classes":"patrimonium-img"
           },
           { 
+            "target_modal" : "coming-out",
             "svg_text" : "coming out",
             "link_element" : "coming_out",
             "viewbox" : "0 0 100 14",
@@ -100,6 +103,7 @@
             "img_classes":"img-fluid"
           },
           { 
+            "target_modal" : "chopin",
             "svg_text" : "chopin",
             "viewbox" : "0 0 100 22",
             "x_dimension": "11",
@@ -116,6 +120,7 @@
           },
 
           { 
+            "target_modal" : "music-school",
             "svg_text" : "music school",
             "link_element" : "music_school",
             "viewbox" : "00 0 100 10",
@@ -128,21 +133,23 @@
           },
 
           { 
+            "target_modal" : "nimit",
             "svg_text" : "nimit",
-            "link_element" : "",
+            "link_element" : "nimit",
             "viewbox" : "0 0 100 21",
             "x_dimension": "12",
             "y_dimension": "20",
             "alt" : "nimit",
             "svg_text_class": "nimit",
-            "hover_container_classes": "",
-            "img_classes":"d-none"
+            "hover_container_classes": "nimit",
+            "img_classes":"nimit-img"
           },
           { 
+            "target_modal" : "selfbrand",
             "svg_text" : "selfbrand",
             "link_element" : "selfbrand",
             "viewbox" : "0 0 100 12",
-            "x_dimension": "10",
+            "x_dimension": "3",
             "y_dimension": "10",
             "alt" : "selfbrand",
             "svg_text_class": "selfbrand",
@@ -154,11 +161,22 @@
       </div>  
       
     </div>
-           
+    
+    @@include('./src/html/partials/behance.html', {
+      "rm_spacing" : "true"
+    })
+
+      
   </main>
 
   @@include('./src/html/partials/covers.html')
   @@include('./src/html/partials/zz-award.html')
+  @@include('./src/html/partials/patrimonium.html')
+  @@include('./src/html/partials/coming-out.html')
+  @@include('./src/html/partials/chopin.html')
+  @@include('./src/html/partials/music-school.html')
+  @@include('./src/html/partials/nimit.html')
+  @@include('./src/html/partials/selfbrand.html')    
 
 
   <script src="./js/app.js"></script>

@@ -1,0 +1,16 @@
+.chopin-modal {
+  .top-chopin-margin {
+    margin-top: -20px;
+  }
+
+  .overlayed-group {
+    position: relative;
+    .chopin-posters {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 2;
+      transform: translateY(10%);
+    }
+  }
+}
